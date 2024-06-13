@@ -1,0 +1,26 @@
+{
+	"name": "browser-form",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "webpack serve"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"css-loader": "^7.1.2",
+		"html-loader": "^5.0.0",
+		"html-webpack-plugin": "^5.6.0",
+		"style-loader": "^4.0.0",
+		"webpack": "^5.92.0",
+		"webpack-cli": "^5.1.4",
+		"webpack-dev-server": "^5.0.4"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.4.0",
+		"eslint": "^9.4.0",
+		"globals": "^15.4.0"
+	}
+}

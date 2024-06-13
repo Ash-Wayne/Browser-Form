@@ -1,0 +1,79 @@
+*,
+::before,
+::after {
+	padding: 0;
+	margin: 0;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	width: 400px;
+	margin: 150px auto 0;
+	border: 3px solid black;
+	padding: 30px;
+	gap: 30px;
+}
+
+form > div {
+	position: relative;
+	display: flex;
+	justify-content: end;
+	gap: 5px;
+}
+
+input {
+	width: 250px;
+	outline: none;
+	cursor: text;
+}
+
+#submit {
+	width: 60px;
+	margin: auto;
+}
+
+.invalid {
+	border: 1px solid red;
+}
+
+span {
+	position: absolute;
+	top: 21px;
+	left: 129px;
+	font-size: small;
+	font-weight: bold;
+	color: red;
+}
+
+.password-checks-div {
+	width: 400px;
+	margin: 20px auto 0;
+	padding-left: 200px;
+	font-size: small;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.black-font {
+	color: black;
+}
+
+.bold-green-font {
+	color: green;
+	font-weight: bold;
+}
+
+.bold-green-font::after {
+	content: ' ✓';
+}
+
+#password-match-errors {
+	margin-bottom: 15px;
+	color: red;
+	font-weight: bold;
+}
