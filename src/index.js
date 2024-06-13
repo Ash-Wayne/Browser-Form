@@ -31,7 +31,7 @@ const lengthRule = document.getElementById('length-rule');
 })();
 
 (function addListenersToFormFields() {
-	email.addEventListener('input', () => {
+	email.addEventListener('change', () => {
 		if (email.validity.valid) {
 			emailValidation.textContent = '';
 			email.className = '';
@@ -40,7 +40,7 @@ const lengthRule = document.getElementById('length-rule');
 		}
 	});
 
-	country.addEventListener('input', () => {
+	country.addEventListener('change', () => {
 		if (country.validity.valid) {
 			countryValidation.textContent = '';
 			country.className = '';
@@ -49,7 +49,7 @@ const lengthRule = document.getElementById('length-rule');
 		}
 	});
 
-	zip.addEventListener('input', () => {
+	zip.addEventListener('change', () => {
 		if (zip.validity.valid) {
 			zipValidation.textContent = '';
 			zip.className = '';
@@ -67,7 +67,7 @@ const lengthRule = document.getElementById('length-rule');
 		}
 	});
 
-	confPassword.addEventListener('input', () => {
+	confPassword.addEventListener('change', () => {
 		if (checkPasswordMatch()) {
 			confPassValidation.textContent = '';
 			confPassword.className = '';
